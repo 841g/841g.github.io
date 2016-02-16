@@ -70,37 +70,6 @@
 
   <body>
 
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#homeButton" id = 'homeButton'>
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#shortcutsButton" id = 'shortcutsButton'>Shortcuts</a>
-                </li>
-                <li>
-                    <a href="#veteransButton" id = 'veteransButton'>Veterans</a>
-                </li>
-                <li>
-                    <a href="#eventsButton"id ="eventsButton">Events</a>
-                </li>
-                <li>
-                    <a href="#aboutButton"id ="aboutButton">About</a>
-                </li>
-                <li>
-                    <a href="#contactButton"id ="contactButton">Contact</a>
-                </li>
-<!--                 <li>
-                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Hide Menu</a>
-                </li> -->
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
@@ -230,110 +199,8 @@
 
     </div>
     <!-- /#wrapper -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-
-
-//  Hides all elements when the page is finished loading
-   $(document).ready(function(e){
-        $("#homeDisplay").show();
-        $("#shortcutsDisplay").hide();
-        $("#veteransDisplay").hide();
-        $("#eventsDisplay").hide();
-        $("#contactDisplay").hide();
-        $("#aboutDisplay").hide();
-   });
-        
-    
-
-    // begin navigaion script
-    $("#homeButton").click(function(e) {
-        $("#homeDisplay").show();
-        $("#shortcutsDisplay").hide();
-        $("#veteransDisplay").hide();
-        $("#eventsDisplay").hide();
-        $("#contactDisplay").hide();
-        $("#aboutDisplay").hide();
-    });
-/*        $navSwitch("#homeButton");
-    });*/
-
-    $("#shortcutsButton").click(function(e) {
-        $("#homeDisplay").hide();
-        $("#shortcutsDisplay").show();
-        $("#veteransDisplay").hide();
-        $("#eventsDisplay").hide();
-        $("#contactDisplay").hide();
-        $("#aboutDisplay").hide();
-    });
-
-    $("#veteransButton").click(function(e) {
-        $("#homeDisplay").hide();
-        $("#shortcutsDisplay").hide();
-        $("#veteransDisplay").show();
-        $("#eventsDisplay").hide();
-        $("#contactDisplay").hide();
-        $("#aboutDisplay").hide();
-    });
-
-    $("#eventsButton").click(function(e) {
-        $("#homeDisplay").hide();
-        $("#shortcutsDisplay").hide();
-        $("#veteransDisplay").hide();
-        $("#eventsDisplay").show();
-        $("#contactDisplay").hide();
-        $("#aboutDisplay").hide();
-    });
-
-    $("#aboutButton").click(function(e) {
-        $("#homeDisplay").hide();
-        $("#shortcutsDisplay").hide();
-        $("#veteransDisplay").hide();
-        $("#eventsDisplay").hide();
-        $("#contactDisplay").hide();
-        $("#aboutDisplay").show();
-    });
-
-    $("#contactButton").click(function(e) {
-        $("#homeDisplay").hide();
-        $("#shortcutsDisplay").hide();
-        $("#veteransDisplay").hide();
-        $("#eventsDisplay").hide();
-        $("#contactDisplay").show();
-        $("#aboutDisplay").hide();
-    });
-
-    $("#aboutButton").click(function(e) {
-        $("#homeDisplay").hide();
-        $("#shortcutsDisplay").hide();
-        $("#veteransDisplay").hide();
-        $("#eventsDisplay").hide();
-        $("#contactDisplay").hide();
-        $("#aboutDisplay").show();
-    });
-
-    /*$function navSwitch(navigaionId){
-        case '#homeButton':
-            $("#homeDisplay").show();
-            $("#aboutDisplay").hide();
-        break;
-    }*/
-
-    </script>
-
+   
 </body>
-
 </html>
 
 
