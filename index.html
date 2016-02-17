@@ -20,15 +20,24 @@
       <div class="container">
         <h1 class="css-typing">841g-site<span class="blinking-cursor">|</span></h1>
         <h2>Chill Gaming Community</h2>
+        <a href="#" id = 'homeButton'>Home</a> |
+        <a href="#" id = 'shortcutsButton'>Shortcuts</a> |
+        <a href="#" id = 'membersButton'>Members</a> |
+        <a href="#" id = 'eventsButton'>Events</a> |
+        <a href="#" id = 'aboutButton'>About</a> |
+        <a href="#" id = 'contactButton'>Contact</a>
       </div>
     </header>
   <!--   This is the main body of the site -->
     <div class="container">
       <section id="main_content">
+        <div id = "homeDisplay">
         <h1>Welcome to the 841G Landing Page</h1>
         <p>The goal of this site is to provide information for and about the 841G community.</p>
         <p>This site is currently under construction</p>                     
+        </div>
 
+        <div id = 'shortcutsDisplay'>
         <h1>Shortcuts</h1>
         <p>This site is currently under construction
 
@@ -46,7 +55,9 @@
           </li>
           <br />
           -->
+        </div>
 
+        <div id = "membersDisplay">
         <h1>Community Officers</h1>
         <p>Officers are members who manage the technical areas of the community as well as other members of the group. New officers must be elected by the council of veterans as well as have brought new members to the group, have organized and lead community events, and exemplify proficient leadership qualities that can be spoken for by other members of 841G.
         <ul>
@@ -86,22 +97,27 @@
             <br />
           </ul>
         </ul>
+        </div>
 
-                      
+
+          <div id = "eventsDisplay">            
           <h1>Events</h1>
           <p>This site is currently under construction</p>
           <div id = "responsive-iframe-container">
           <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%239999ff&amp;src=jkje57jgjuek74jomjoi3mj94g%40group.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FNew_York" style="border:solid 1px #777" width="300" height="600" frameborder="0" scrolling="no" ></iframe></div>
+          </div>
 
-
+          <div id = "aboutDisplay">
           <h1>About 841G</h1>
           <p>This site is currently under construction</p>
           <p>841G was originally founded by a team of sales people who worked together at a Best Buy who shared a common interest of getting together at regular times to play video games with each other over the internet. Over time however 841G has evolved to something more than just a couple coworkers blowing off steam after work to a community of many members who all share the same thing in common: a love for technology and video games. 841G is the best ongoing virtual LAN party where the fun and comradery never ends.</p>
+          </div>
 
-
+          <div id = "contactDisplay">
           <h1>Contact Us</h1>
           <p>This site is currently under construction</p>
           <p>The best way to reach out to the technical operations team of 841G is via Discord chat or contacting an officer directly through steam.</p>
+          </div>
 
           <!-- Links at bottom of page -->
           <section id="downloads">
@@ -124,6 +140,12 @@
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
+
+
+  <!-- jQuery -->
+  <script src="javascripts/jquery.js"></script>
+
+  <script src="javascripts/navmenu.js"></script>
   </body>
 <!-- This is the end of the main page content -->
 </html>
